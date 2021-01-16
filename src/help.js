@@ -1,124 +1,244 @@
-const help = (prefix) => {
-	return `
+const help = (prefix) => { 
+	return `   *🍁MENU Lucasss BOT 🍁*
+	
+	
+*╭═┅ৡৢ͜͡✦═══╡꧁꧂╞═══┅ৡৢ͜͡✦═╮*
+*║┊:* ⃟ ⃟  ━ೋ๑————๑ೋ━* ⃟ ⃟ *      
+*║┊:◄✜┢┅ீ͜ৡৢ͜͡✦━━◇━━ீ͜ৡৢ͜͡✦┅┧✜►*
+*║┊:*      ┈ ┈ ┈ ┈ ┈ ┈ ┈ ┈ ┈ ┈ ┈  
+*║┊:*   NOME : Lucasss BOT
+*║┊:*  CRIADOR : Lucasss
+*║┊:*
+*║┊:*      ┈ ┈ ┈ ┈ ┈ ┈ ┈ ┈ ┈ ┈ ┈ 
+*║┊:◄✜┢┅ீ͜ৡৢ͜͡✦━━◇━━ீ͜ৡৢ͜͡✦┅┧✜►*
+*║┊:  * ⃟ ⃟  ━ೋ๑————๑ೋ━* ⃟ ⃟ *   
+*╰═┅ৡৢ͜͡✦═══╡꧁꧂╞═══┅ৡৢ͜͡✦═╯*
 
-╔════════════════════
-║       🔥Lucasss 𝐁𝐎𝐓🔥
-╠════════════════════
-
-
-➸ Prefix:  *「${prefix} 」*
-➸ Status: *「 Online 」*
-
-       • ──── ✾ ──── •
-       *FIGURINHAS*【✔】
-       • ──── ✾ ──── •
-      
-➸ Comando : *${prefix}sticker* ou *${prefix}stiker*
-➸ útil em : converter imagem/gif/vídeo em adesivo
-➸ uso : responder imagem/gif/video ou enviar imagem/gif/video com legenda\n
-➸ Comando : *${prefix}sticker nobg* ou *${prefix}stiker nobg*
-➸ útil em : converter imagem em adesivo removendo o fundo
-➸ uso : responder imagem ou enviar imagem com legenda/n
-➸ Comando : *${prefix}toimg*
-➸ útil em : converter adesivo em imagem
-➸ uso : adesivo de resposta\n
-➸ Comando : *${prefix}tsticker* ou *${prefix}tstiker*
-➸ útil em : converter texto em adesivo
-➸ uso : *${prefix}tsticker seu texto aqui*\n
-
-       • ─── ✾ ─── •
-       *MEMES*【✔】
-       • ─── ✾ ─── •
-      
-➸ Comando : *${prefix}meme*
-➸ útil em : mandar imagens aleatórias de meme [inglês]
-➸ uso : basta emviar o comando\n
-➸ Comando : *${prefix}memeindo*
-➸ útil em : mandar imagens aleatórias de meme [indo]
-➸ uso : basta enviar o comando
-
-       • ──── ✾ ──── •
-       *OUTROS...*【✔】
-       • ──── ✾ ──── •
-      
-➸ Comando : *${prefix}gtts*
-➸ útil em : converter texto em fala/áudio
-➸ uso : *${prefix}gtts [cc] [text]*\nexemplo : *${prefix}gtts ja On2-chan*\n
-➸ Comando : *${prefix}loli*
-➸ útil em : mandar imagens aleatórias de loli
-➸ uso : basta enviar o comando\n
-➸ Comando : *${prefix}nsfwloli*
-➸ útil em : mandar imagens aleatórias de nsfw loli
-➸ uso : basta enviar o comando\n
-➸ Comando : *${prefix}url2img*
-➸ útil em : tirar screenshots da web
-➸ uso : *${prefix}url2img [tipe] [url]*\n
-➸ Comando : *${prefix}simi*
-➸ útil em : responder sua mensagem por simi
-➸ uso : *${prefix}simi sua mensagem*\n
-➸ Comando : *${prefix}ocr*
-➸ útil em : pegar o texto da foto e lhe enviar
-➸ uso : responder imagem ou enviar mensagem com legenda\n
-➸ Comando : *${prefix}wait*
-➸ útil em : pesquisar sobre o anime por imagem [ Que anime é este/que ]
-➸ uso : responder imagem ou enviar imagem com legenda\n
-➸ Comando : *${prefix}setprefix*
-➸ útil em : alterar o prefixo do bot
-➸ uso : *${prefix}setprefix [texto|opcional]*\nexemplo : *${prefix}setprefix ?*
-➸ Nota : Usado somente pelo proprietário do bot\n
-
-       • ─── ✾ ─── •
-       *GRUPO*【✔】
-       • ─── ✾ ─── •
-      
-➸ Comando : *${prefix}linkgroup*
-➸ útil em : enviar o link do grupo
-➸ uso : basta enviar o comando\n
-➸ Comando : *${prefix}marcar*
-➸ útil em : marcar todos os membros do grupo, incluindo administradores
-➸ uso : basta enviar o comando\n
-➸ Nota : Você precisa ser administrador do grupo\n
-➸ Comando : *${prefix}simih*
-➸ útil em : ativar o modo simi no grupo
-➸ uso : *${prefix}simih 1* para ativar o modo simi e *${prefix}simih 0* para 
-➸ desativar o modo simih
-➸ Nota : Você precisa ser administrador do grupo\n
-➸ Comando : *${prefix}add*
-➸ útil em : adicionar membro ao grupo
-➸ uso : *${prefix}add 5585xxxxx*\n
-➸ Nota : o bot precisa ser admin!\n
-➸ Comando : *${prefix}kick*
-➸ útil em : remover membros do grupo
-➸ uso : *${prefix}kick e o @da pessoa*\n
-➸ Nota : Você precisa ser admin e o bot também
-➸ Comando : *${prefix}promote*
-➸ útil em : tornar membro do grupo um administrador
-➸ uso : *${prefix}promote e o @da pessoa*\n
-➸ Nota : Você precisa ser admin e o bot também
-➸ Comando : *${prefix}demote*
-➸ útil em : tornar o administrador um membro comum
-➸ uso : *${prefix}demote e o @da pessoa*\n
-➸ Nota : Você precisa ser admin e o bot também
-
-       • ────── ✾ ────── •
-       *MENU DO Lucasss*【✔】
-       • ────── ✾ ────── •              
-
-➸ *${prefix}help1* ♔
-    
-
-╔════════════════════
-  FEITO POR *Lucass*
-  DUVIDAS? 👇
-  WA.me/5517988058041
-╚════════════════════`
+╭▬▬▬▬▬▬▬▬ *˚✯ཻ⸙۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪۪ࣤ ̥•┉┉•
+⊱✦•* 𝑓𝑖𝑡𝑢𝑟 𝐼𝑐ℎ𝑖 𝐵𝑜𝑡
+▋╭┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅┅   
+▋┋*${prefix}info
+▋┋*${prefix}owner
+▋┋*${prefix}donasi
+▋┋*${prefix}repot
+▋┋*${prefix}speed
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+╭────────────────────╮
+*➼✰︙𝐼𝑐ℎ𝑖 𝑀𝑒𝑑𝑖𝑎
+╰────────────────────╯
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+▋┋*${prefix}sticker
+▋┋*${prefix}tsticker
+▋┋*${prefix}toimg
+▋┋*${prefix}wait
+▋┋*${prefix}kbbi
+▋┋*${prefix}imoji
+▋┋*${prefix}url2img
+▋┋*${prefix}playstore
+▋┋*${prefix}babi
+▋┋*${prefix}anjing
+▋┋*${prefix}unta
+▋┋*${prefix}elag
+▋┋*${prefix}inu
+▋┋*${prefix}joox
+▋┋*${prefix}randomcat
+▋┋*${prefix}wallpaperhd
+▋┋*${prefix}ssweb
+▋┋*${prefix}memeindo
+▋┋*${prefix}ttp
+▋┋*${prefix}meme
+▋┋*${prefix}tep
+▋┋*${prefix}tts
+▋┋*${prefix}tes
+▋┋*${prefix}pinterest
+▋┋*${prefix}image
+▋┋*${prefix}igstalk
+▋┋*${prefix}fototiktok
+▋┋*${prefix}tiktokstalk
+▋┋*${prefix}tiktok
+▋┋*${prefix}ytmp4
+▋┋*${prefix}ytmp3
+▋┋*${prefix}ytsearch
+▋┋*${prefix}ocr
+▋┋*${prefix}nulis
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+╭────────────────────╮
+*➼✰︙𝐼𝑐ℎ𝑖 𝑀𝑎𝑟𝑘𝑒𝑟 <𝑡𝑒𝑥𝑡 | 𝑡𝑒𝑥𝑡>
+╰────────────────────╯
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+▋┋*${prefix}firetext
+▋┋*${prefix}snow
+▋┋*${prefix}marvelogo
+▋┋*${prefix}epep
+▋┋*${prefix}text3d
+▋┋*${prefix}textscreen
+▋┋*${prefix}lionlogo
+▋┋*${prefix}water
+▋┋*${prefix}rtext
+▋┋*${prefix}party
+▋┋*${prefix}ninjalogo
+▋┋*${prefix}stiltext
+▋┋*${prefix}lovemake
+▋┋*${prefix}textblue
+▋┋*${prefix}textdark
+▋┋*${prefix}galaxtext
+▋┋*${prefix}quotemarker
+▋┋*${prefix}wolflogo
+▋┋*${prefix}wolflogo2
+▋┋*${prefix}phlogo
+▋┋*${prefix}glitch
+▋┋*${prefix}tahta
+▋┋*${prefix}thunder
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+╭────────────────────╮
+*➼✰︙𝐼𝑐ℎ𝑖 𝐴𝑛𝑖𝑚𝑒 
+╰────────────────────╯
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+▋┋*${prefix}openanime
+▋┋*${prefix}naruto
+▋┋*${prefix}minato
+▋┋*${prefix}boruto
+▋┋*${prefix}hinata
+▋┋*${prefix}sasuke
+▋┋*${prefix}sakura
+▋┋*${prefix}kineki
+▋┋*${prefix}toukacan
+▋┋*${prefix}rize
+▋┋*${prefix}akira
+▋┋*${prefix}itori
+▋┋*${prefix}kurumi
+▋┋*${prefix}miku
+▋┋*${prefix}anime
+▋┋*${prefix}nekoanime
+▋┋*${prefix}loli
+▋┋*${prefix}loli2
+▋┋*${prefix}waifu
+▋┋*${prefix}waifu2
+▋┋*${prefix}wibu
+▋┋*${prefix}randomanime
+▋┋*${prefix}pokemon
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+╭────────────────────╮
+*➼✰︙𝐼𝑐ℎ𝑖 𝐹𝑢𝑛
+╰────────────────────╯
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+▋┋*${prefix}artinama
+▋┋*${prefix}truth
+▋┋*${prefix}dare
+▋┋*${prefix}tebakgambar
+▋┋*${prefix}family100
+▋┋*${prefix}caklontong
+▋┋*${prefix}game
+▋┋*${prefix}primbonjodoh
+▋┋*${prefix}ramaljodoh
+▋┋*${prefix}ramaljadian
+▋┋*${prefix}mlherolist
+▋┋*${prefix}bucin
+▋┋*${prefix}persengay
+▋┋*${prefix}ramalhp
+▋┋*${prefix}cekjodoh
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+╭────────────────────╮
+*➼✰︙𝐼𝑐ℎ𝑖 𝐼𝑛𝑓𝑜
+╰────────────────────╯
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+▋┋*${prefix}infogc
+▋┋*${prefix}infogempa
+▋┋*${prefix}infocuaca
+▋┋*${prefix}infonomor
+▋┋*${prefix}infomobil
+▋┋*${prefix}infomotor
+▋┋*${prefix}groupinfo
+▋┋*${prefix}lirik
+▋┋*${prefix}quotes
+▋┋*${prefix}cerpen
+▋┋*${prefix}chord
+▋┋*${prefix}wiki
+▋┋*${prefix}brainly
+▋┋*${prefix}resepmakanan
+▋┋*${prefix}map
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+╭────────────────────╮
+*➼✰︙𝐼𝑐ℎ𝑖 𝐹𝑖𝑡𝑢𝑟 𝐺𝑟𝑜𝑢𝑝
+╰────────────────────╯
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+▋┋*${prefix}add
+▋┋*${prefix}kick
+▋┋*${prefix}promote
+▋┋*${prefix}demote
+▋┋*${prefix}setname
+▋┋*${prefix}setdesc
+▋┋*${prefix}welcome
+▋┋*${prefix}nsfw
+▋┋*${prefix}simih
+▋┋*${prefix}group
+▋┋*${prefix}tagme
+▋┋*${prefix}hidetag
+▋┋*${prefix}tag
+▋┋*${prefix}tagall
+▋┋*${prefix}fitnah
+▋┋*${prefix}infogc
+▋┋*${prefix}groupinfo
+▋┋*${prefix}linkgroup
+▋┋*${prefix}listadmins
+▋┋*${prefix}openanime
+▋┋*${prefix}edotense
+▋┋*${prefix}kudeta
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+╭────────────────────╮
+*➼✰︙𝐼𝑐ℎ𝑖 𝑁𝑠𝑓𝑤 𝑀𝑒𝑛𝑢
+╰────────────────────╯
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+▋┋*${prefix}nsfwloli
+▋┋*${prefix}nswflowjob
+▋┋*${prefix}nsfwneko
+▋┋*${prefix}nsfwtrap
+▋┋*${prefix}randomhentai
+▋┋*${prefix}hentai
+▋┋*${prefix}indohot
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+╭────────────────────╮
+*➼✰︙𝐼𝑐ℎ𝑖 𝐾𝑒𝑟𝑎𝑛𝑔
+╰────────────────────╯
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+▋┋*${prefix}apakah
+▋┋*${prefix}kapankah
+▋┋*${prefix}bisakah
+▋┋*${prefix}rate
+▋┋*${prefix}watak
+▋┋*${prefix}hobi
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+╭────────────────────╮
+*➼✰︙𝑂𝑡ℎ𝑒𝑟𝑠 𝐼𝑐ℎ𝑖
+╰────────────────────╯
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+▋┋*${prefix}blosklist
+▋┋*${prefix}say
+▋┋*${prefix}hilih
+▋┋*${prefix}testime
+▋┋*${prefix}delete
+▋┋*${prefix}shorturl
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+╭────────────────────╮
+*➼✰︙𝐼𝑐ℎ𝑖 𝑂𝑤𝑛𝑒𝑟 𝐹𝑖𝑡𝑢𝑟
+╰────────────────────╯
+■█■█■█■▰▱▰▱▰▱■█■█■█■
+▋┋*${prefix}bc -promosi*
+▋┋*${prefix}ban -banned
+▋┋*${prefix}block -blok
+▋┋*${prefix}unblok
+▋┋*${prefix}clearall
+▋┋*${prefix}clone
+▋┋*${prefix}getses
+▋┋*${prefix}setpp
+▋┋*${prefix}leave
+═️ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ۣٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜۜ͜͡♕͜͡═️ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ۣٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜۜ͜͡♕͜͡═️ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ۣٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜۜ͜͡♕͜͡═️ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ۣٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜۜ͜͡♕͜͡═️ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ۣٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜۜ͜͡♕͜͡═️ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ۣٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜۜ͜͡♕͜͡═️ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ۣٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜۜ͜͡♕͜͡═️ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ۣٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜۜ͜͡♕͜͡═️ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ۣٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜۜ͜͡♕͜͡═️ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ۣٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜۜ͜͡♕͜͡
+*(•♛•)─•••──ೇุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุุ──────﹒ׂׂૢ་༘࿐ೢִֶָ──╮*
+*▄▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▄*        
+    *┏ೋ┉━┉ೋ✧ೋ┉━┉ೋ┓*
+            BY : Lucasss
+    *┗ೋ┉━┉ೋ✧ೋ┉━┉ೋ┛*
+*▀▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▀*       
+   ۝ٜٜٜٜٜٜٜ҈⸙ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ٜٜٜٜ✞ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ͜҈͡۝ٜٜٜٜٜٜٜ҈⸙ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ٜٜٜٜ✞ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ͜҈͡۝ٜٜٜٜٜٜٜ҈⸙ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ٜٜٜٜ✞ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ͜҈͡۝ٜٜٜٜٜٜٜ҈⸙ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ٜٜٜٜ✞ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ͜҈͡۝ٜٜٜٜٜٜٜ҈⸙ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ٜٜٜٜ✞ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ͜҈͡۝ٜٜٜٜٜٜٜ҈ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ͜҈ٜٜٜٜٜٜٜ͡҈⸙ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ҈ٜٜٜٜ✞ٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜٜ©`
 }
-
 exports.help = help
-
-
-
-
-
-
-
